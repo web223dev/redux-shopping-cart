@@ -1,0 +1,40 @@
+.selfContainer{
+  padding: 0 2%;
+}
+.selfContainer .item{
+  float: left;
+  width: 25%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+}
+.selfContainer .item:hover{
+  border: 1px solid #eee;
+}
+.selfContainer .item:hover .item__buy-btn{
+  background-color: #eabf00;
+}
+.selfContainer .item__title{
+  position: relative;
+  padding: 10px 0;
+}
+.selfContainer .item__title::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #eabf00;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 0;
+}
+.selfContainer .item__buy-btn {
+  background-color: #1b1a20;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}

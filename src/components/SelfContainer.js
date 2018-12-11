@@ -43,7 +43,7 @@ class SelfContainer extends Component {
       )
     })
     return (
-      <div>
+      <div className="selfContainer">
         {products}
       </div>
     );
