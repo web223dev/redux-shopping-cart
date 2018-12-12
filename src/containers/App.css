@@ -1,5 +1,7 @@
 .selfContainer{
   padding: 0 2%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .selfContainer .item{
   float: left;
@@ -18,7 +20,8 @@
 }
 .selfContainer .item__title{
   position: relative;
-  padding: 10px 0;
+  padding: 0 20px;
+  height: 45px;
 }
 .selfContainer .item__title::before{
   content: '';
@@ -29,6 +32,16 @@
   left: 50%;
   margin-left: -10px;
   bottom: 0;
+}
+.selfContainer .item__price{
+  height: 60px;
+}
+.selfContainer .item__price .val b{
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+.selfContainer .item__price .installment{
+  color: #9c9b9b;
 }
 .selfContainer .item__buy-btn {
   background-color: #1b1a20;
