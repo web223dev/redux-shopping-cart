@@ -18,12 +18,12 @@ const Product = (props) => {
   }
 
   return (
-    <div className="item" data-sku={product.sku}>
-      <div className="item__thumb">
+    <div className="shelf-item" data-sku={product.sku}>
+      <div className="shelf-item__thumb">
         <img src={require(`../static/products/${product.sku}_1.jpg`)} alt={product.title} />
       </div>
-      <p className="item__title">{product.title}</p>
-      <div className="item__price">
+      <p className="shelf-item__title">{product.title}</p>
+      <div className="shelf-item__price">
         <div className="val">
           <small>R$</small>
           <b>{formattedPrice.substr(0, formattedPrice.length- 3)}</b>
@@ -31,7 +31,7 @@ const Product = (props) => {
         </div>
         {productInstallment}
       </div>
-      <div onClick={() => props.addToCart(product.sku)} className="item__buy-btn">Add To Cart</div>
+      <div onClick={() => props.addToCart(product.sku)} className="shelf-item__buy-btn">Add To Cart</div>
     </div>
   );
 };

@@ -29,6 +29,7 @@ class SelfContainer extends Component {
   }
 
   addToCart = (sku) => {
+    this.props.openFloatCart();
     console.log(sku);
   }
 
@@ -43,7 +44,7 @@ class SelfContainer extends Component {
       )
     })
     return (
-      <div className="selfContainer">
+      <div className="shelf-container">
         {products}
       </div>
     );
